@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for mobile-friendly UI */
+.mobile-app {
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile optimization for buttons */
+.mobile-button {
+  @apply px-4 py-3 text-base font-medium rounded-md;
+  touch-action: manipulation;
+}
+
+/* Blue header style for cards */
+.card-header-blue {
+  @apply bg-blue-600 text-white p-3 rounded-t-md font-bold;
+}
+
+/* Table styles for mobile */
+.mobile-table {
+  @apply w-full border-collapse;
+}
+
+.mobile-table th,
+.mobile-table td {
+  @apply p-2 text-left align-middle;
+}
+
+.mobile-table tr {
+  @apply border-b border-gray-200;
+}
+
+.mobile-table tr:last-child {
+  @apply border-b-0;
+}
+
+/* Form field spacing */
+.form-field {
+  @apply mb-4;
+}
+
+/* Mobile-friendly inputs */
+.mobile-input {
+  @apply p-3 text-base;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
